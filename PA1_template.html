@@ -151,7 +151,7 @@ hist(totalStepsperDay$totalSteps, xlab = &quot;Total number of steps&quot;, col 
 <p>We can also compute the mean and the median of the total number of steps taken each day.</p>
 <pre class="r"><code>meanSteps &lt;- format(mean(totalStepsperDay$totalSteps, na.rm = TRUE), digits = 7)
 medianSteps &lt;- format(median(totalStepsperDay$totalSteps, na.rm = TRUE), digits = 7)</code></pre>
-<p>The mean is <strong>9354.23</strong> and the median <strong>10395</strong>. They are almost equal.</p>
+<p>The mean is <strong>9354.23</strong> and the median <strong>10395</strong>.</p>
 </div>
 <div id="what-is-the-average-daily-activity-pattern" class="section level3">
 <h3>What is the average daily activity pattern?</h3>
@@ -180,7 +180,7 @@ hist(totalStepsperDayNoNA$totalSteps, xlab = &quot;Total number of steps&quot;, 
 <pre><code>## [1] 10766.19</code></pre>
 <pre class="r"><code>median(totalStepsperDayNoNA$totalSteps)</code></pre>
 <pre><code>## [1] 10766.19</code></pre>
-<p>We now notice that the median has slightly changed, and is now equal to the mean.</p>
+<p>We now notice that the mean and median have changes and are equal.</p>
 </div>
 <div id="are-there-differences-in-activity-patterns-between-weekdays-and-weekends" class="section level2">
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>

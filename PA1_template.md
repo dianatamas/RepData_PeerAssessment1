@@ -52,7 +52,7 @@ taken each day.
     meanSteps <- format(mean(totalStepsperDay$totalSteps, na.rm = TRUE), digits = 7)
     medianSteps <- format(median(totalStepsperDay$totalSteps, na.rm = TRUE), digits = 7)
 
-The mean is **9354.23** and the median **10395**. They are almost equal.
+The mean is **9354.23** and the median **10395**.
 
 ### What is the average daily activity pattern?
 
@@ -110,8 +110,7 @@ taken per day, plot a histogram and then compute the mean and median.
 
     ## [1] 10766.19
 
-We now notice that the median has slightly changed, and is now equal to
-the mean.
+We now notice that the mean and median have changes and are equal.
 
 Are there differences in activity patterns between weekdays and weekends?
 -------------------------------------------------------------------------

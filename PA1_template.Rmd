@@ -59,7 +59,7 @@ meanSteps <- format(mean(totalStepsperDay$totalSteps, na.rm = TRUE), digits = 7)
 medianSteps <- format(median(totalStepsperDay$totalSteps, na.rm = TRUE), digits = 7)
 ```
 
-The mean is **`r meanSteps`** and the median **`r medianSteps`**. They are almost equal.
+The mean is **`r meanSteps`** and the median **`r medianSteps`**. 
 
 
 
@@ -111,7 +111,7 @@ mean(totalStepsperDayNoNA$totalSteps)
 median(totalStepsperDayNoNA$totalSteps)
 ```
 
-We now notice that the median has slightly changed, and is now equal to the mean.
+We now notice that the mean and median have changes and are equal.
 
 
 

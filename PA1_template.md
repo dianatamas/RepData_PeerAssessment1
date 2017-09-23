@@ -41,7 +41,7 @@ For now, we will ignore the missing values in this dataset.
 We first calculate the total number of steps per day and contruct a
 histogram with the result.
 
-    totalStepsperDay <- activityData %>% group_by(date) %>% summarize(totalSteps = sum(steps))
+    totalStepsperDay <- activityData %>% group_by(date) %>% summarize(totalSteps = sum(steps, na.rm = TRUE))
     hist(totalStepsperDay$totalSteps, xlab = "Total number of steps", col = "#2b8cbe", border = "white", main = "Total number of steps per day")
 
 ![](PA1_template_files/figure-markdown_strict/unnamed-chunk-1-1.png)
@@ -52,8 +52,7 @@ taken each day.
     meanSteps <- format(mean(totalStepsperDay$totalSteps, na.rm = TRUE), digits = 7)
     medianSteps <- format(median(totalStepsperDay$totalSteps, na.rm = TRUE), digits = 7)
 
-The mean is **10766.19** and the median **10765**. They are almost
-equal.
+The mean is **9354.23** and the median **10395**. They are almost equal.
 
 ### What is the average daily activity pattern?
 

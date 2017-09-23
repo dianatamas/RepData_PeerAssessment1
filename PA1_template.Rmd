@@ -48,7 +48,7 @@ For now, we will ignore the missing values in this dataset.
 We first calculate the total number of steps per day and contruct a histogram with the result.
 
 ```{r}
-totalStepsperDay <- activityData %>% group_by(date) %>% summarize(totalSteps = sum(steps))
+totalStepsperDay <- activityData %>% group_by(date) %>% summarize(totalSteps = sum(steps, na.rm = TRUE))
 hist(totalStepsperDay$totalSteps, xlab = "Total number of steps", col = "#2b8cbe", border = "white", main = "Total number of steps per day")
 ```
 
